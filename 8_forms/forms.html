@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulários em HTML</h1>
+    <hr>
+
+    <article>
+
+        <form action="https://httpbin.org/anything" method="get" autocomplete="off">
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" style="font-size: 20px;" size="40" maxlength="35"
+                    placeholder="Inserir o 🫵🏻 nome" autofocus required><span>⚠️ Preenchimento
+                    obrigatório</span>
+            </p>
+
+            <p>
+                <label for="apeldio">Apelido:</label><br>
+                <input type="text" id="apelido" name="apelido" placeholder="Campo desabilitado" disabled>
+            </p>
+    </article>
+
+    <article>
+        <label for="comentarios">Comentários</label><br>
+        <textarea name="comentarios" id="comentarios" cols="50" rows="10"
+            placeholder="Escreva um comentário..."></textarea>
+    </article>
+
+    <article>
+        <!-- usar o mesmo name para que somente um seja marcado -->
+        <h1>Que estilo de música prefere?</h1>
+        <input type="radio" name="musica" id="rock" value="rock">
+        <label for="rock">Rock</label>
+
+        <input type="radio" name="musica" id="Pop" value="pop">
+        <label for="Pop">Pop</label>
+
+        <input type="radio" name="musica" id="Samba" value="samba" checked>
+        <label for="Samba">Samba</label>
+    </article>
+
+    <article>
+        <h1>Que serviço utiliza para ouvir música?</h1>
+        <input type="checkbox" name="servico" id="spotify" value="spotify">
+        <label for="servico">Spotify</label>
+
+        <input type="checkbox" name="servico" id="applemusic" value="applemusic">
+        <label for="servico">Apple Music</label>
+
+        <input type="checkbox" name="servico" id="deezer" value="deezer">
+        <label for="servico">Deezer</label>
+    </article>
+
+    <article>
+        <h1>Em que device costuma ouvir música?</h1>
+        <label for="device">Device:</label>
+        <select name="device" id="device">
+            <option> -- Escolha uma opção -- </option>
+            <option value="walkman">Walkman</option>
+            <option value="discman">Discman</option>
+            <option value="iPod">iPod</option>
+            <option value="radio">Radio</Rption>
+        </select>
+
+        <h1>Em que device costuma ouvir música? - Múltiplos</h1>
+        <p>Escolha múltiplas opções pressionando a tecla CMD</p>
+        <label for="device">Devices:</label><br>
+        <select name="device" id="device" multiple size="6">
+            <option value="walkman">Walkman</option>
+            <option value="discman">Discman</option>
+            <option value="iPod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="pc">PC</option>
+            <option value="tv">TV</option>
+        </select>
+    </article>
+
+    <article>
+        <h1>Qual o browser que mais utiliza?</h1>
+        <label for="browser">Browser:</label><br>
+
+        <input type="text" id="browser" name="browser" list="browsers">
+        <datalist id="browsers">
+            <option value="microsoft-edge">Edge</option>
+            <option value="google">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="brave">Brave</option>
+            <option value="safari">Safari</option>
+            <option value="arc">Arc</option>
+        </datalist>
+    </article>
+
+    <article>
+        <h1>Opções de 'text-input'</h1>
+        <input type="color" name="cor" id="cor"><br>
+        <input type="date" name="data" id="data"><br>
+        <input type="time" name="horario" id="horario"><br>
+        <input type="password" name="password" id="password" placeholder="Senha"><br>
+        <input type="email" name="email" id="email" required placeholder="Insira um email"><br>
+        <input type="url" name="url" id="url" placeholder="Insira uma URL"><br>
+        <input type="range" name="range" min="0" max="10" value="8" step="2">
+    </article>
+
+
+    <p>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </p>
+
+    </form>
+</body>
+
+</html>

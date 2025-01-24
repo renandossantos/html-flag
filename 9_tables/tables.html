@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        th {
+            color: white;
+            font-size: 32px;
+            font-family: monospace;
+
+        }
+
+        td {
+            text-align: center;
+        }
+
+        table {
+            height: 400;
+            background-color: tomato;
+        }
+
+        td {
+            width: 3000px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <hr>
+
+    <table border="1"> <!-- Table -->
+        <thead>
+            <th colspan="3">Header da tabela</th> <!-- Table Header -->
+        </thead>
+
+        <tbody>
+
+            <tr> <!-- Table Row -->
+                <td colspan="2">1</td> <!-- Table Data -->
+                <td rowspan="2">2</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <td colspan="2">7</td>
+                <td>8</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>

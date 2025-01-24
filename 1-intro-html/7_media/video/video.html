@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML</title>
+</head>
+
+<body>
+    <h1>Vídeos em HTML</h1>
+    <hr>
+
+    <video src="puppy.mp4" width="540" height="300" controls loop muted poster="../images/puppy.jpg">
+        <!-- poster é a imagem que aparece antes do vídeo ser carregado -->
+        <p>Um vídeo de um filhote de cachorro.</p>
+    </video>
+
+    <video src="puppy.webm" width="500" controls loop muted>
+        <p>Um vídeo em webm.</p>
+    </video>
+
+    <!-- <video src="puppy.ogg" width="500" controls loop muted>
+        <p>Um vídeo em ogg.</p>
+    </video> -->
+
+    <hr>
+
+    <iframe width="540" height="315" src="https://www.youtube.com/embed/M29GQmcEDkQ?si=VMYCmdnl_MgZo0Ue"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- iframe é um elemento HTML que permite incorporar conteúdo de outro site -->
+    <hr>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199305.1144279882!2d-9.317406525008668!3d38.69157286274621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecb42c3c29c4b%3A0x3002dcadcf52513f!2sTorre%20de%20Bel%C3%A9m!5e0!3m2!1spt-PT!2spt!4v1737714930061!5m2!1spt-PT!2spt"
+        width="540" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+
+</html>

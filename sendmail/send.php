@@ -52,7 +52,7 @@ if(!$mail->send()) {
     
 }
 else {
-     echo 'Message has been sent.';
+    echo 'Message has been sent.';
     //header("Location: ../feedbackform.html");
     
 }
